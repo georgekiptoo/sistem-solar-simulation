@@ -1,9 +1,9 @@
 # Sistem Solar 3D
 
-## 📌 Descriere
+##  Descriere
 O simulare interactivă în timp real a Sistemului Solar, construită cu OpenGL și GLUT. Proiectul redă cele 8 planete care orbitează Soarele pe traiectorii eliptice, împreună cu Luna care orbitează Pământul, inelele lui Saturn, 2000 de stele de fundal și ceață cosmică dinamică — totul iluminat prin pipeline-ul de iluminare cu funcții fixe al OpenGL.
 
-## 🚀 Funcționalități
+## Funcționalități
 - Toate cele 8 planete (Mercur → Neptun) cu culori, dimensiuni și orbite eliptice unice
 - Inelele semi-transparente ale lui Saturn, redate cu `GL_TRIANGLE_STRIP`
 - Luna Pământului cu propria traiectorie orbitală
@@ -16,10 +16,10 @@ O simulare interactivă în timp real a Sistemului Solar, construită cu OpenGL 
 - Pauză/Reluare animație și factor de viteză reglabil
 - Display Lists OpenGL pre-compilate pentru stele, orbite și axe (optimizare performanță)
 
-## 🛠️ Tehnologii folosite
+##  Tehnologii folosite
 C++, OpenGL (pipeline cu funcții fixe), GLUT, `GL_LIGHTING`, `GL_FOG`, Display Lists, umbrire Gouraud
 
-## ▶️ Cum se rulează
+## Cum se rulează
 
 **macOS (necesită Xcode Command Line Tools):**
 
@@ -48,9 +48,9 @@ g++ SistemSolar.cpp -o SistemSolar \
 | Click dreapta | Meniu GLUT (focalizare planetă, setări) |
 
 ## 📷 Capturi de ecran
-*(Adaugă capturi de ecran ale simulării în rulare)*
 
-## 💡 Ce am învățat
+
+##  Ce am învățat
 - **Modelul de iluminare OpenGL**: Am configurat mai multe surse de lumină (`GL_LIGHT0` pentru Soare, `GL_LIGHT1` pentru un highlight specular în spațiul camerei) și am setat proprietăți de material per-obiect (`GL_AMBIENT`, `GL_DIFFUSE`, `GL_SPECULAR`, `GL_EMISSION`, `GL_SHININESS`) pentru a obține o umbrire realistă a planetelor.
 - **Transformări ierarhice**: Am folosit `glPushMatrix` / `glPopMatrix` imbricate pentru a compune independent translația orbitală, rotația proprie, înclinarea inelelor și sub-orbita Lunii pentru fiecare corp ceresc.
 - **Matematica orbitelor eliptice**: Am parametrizat orbitele folosind semi-axe majore (X) și minore (Z) separate, calculând pozițiile cu `cos` / `sin` la fiecare cadru în loc de un rază circulară fixă.
