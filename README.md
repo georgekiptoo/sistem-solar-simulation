@@ -48,6 +48,9 @@ g++ SistemSolar.cpp -o SistemSolar \
 | Click dreapta | Meniu GLUT (focalizare planetă, setări) |
 
 ## 📷 Capturi de ecran
+<img src="planete.png" width="400"/>
+<img src="pamant.png" width="400"/>
+
 
 
 ##  Ce am învățat
